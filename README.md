@@ -9,14 +9,14 @@
 
 | Javascript  |  Typescript |  Solidity | Rust  |
 |---|---|---|---|
-|  `let a = 2;` |  `let a:number = 2;` |  `int256 a = 2;` |  `let a: i32 = 2;` |
+|  let a = 2; |  let a:number = 2; |  int256 a = 2; |  let a: i32 = 2; |
 
 
 
 
 ## Function declaration
 
-Worth noting that all of them a declaring the return type except Javascript.
+Worth noting that all of them are declaring the return type except Javascript.
 
 
 | Javascript  |  Typescript |  Solidity | Rust  |
@@ -40,7 +40,7 @@ let a = |x, y| {
 
 Rust supports implicit return statement : the very last statement not finishing with ; is considered as a return.
 
-## Arrays
+## Arrays
 
 
 | Javascript  |  Typescript |  Solidity | Rust  |
