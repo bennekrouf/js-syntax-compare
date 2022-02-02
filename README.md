@@ -1,6 +1,8 @@
 # Overview
 
-3 languages (Typescript, Solidity, Rust) more or less inspired by Javascript and compared here on most used statements.
+Typescript, Solidity and Rust are more (TS and solidity) or less (Rust) inspired by Javascript and compared here on most used statements.
+
+Using all these languages might appear a bit strange. But we love using **javascript** for its simplicity being a complete language syntax with a script approach, while being browser compatible. Then if we need to add some safety we move to **typescript**. We could need to run CPU intensive code, then **Rust** is our lifesaver. And finally to be able to run our code in the blockchain and not on a specific server, **Solidity** is a good candidate.
 
 
 # Comparison
@@ -11,14 +13,14 @@
 |---|---|---|---|
 |  let a = 2; |  let a:number = 2; |  int256 a = 2; |  let a: i32 = 2; |
 
-Rust is far more complex concerning variables. For example:
+- While Rust is using static typing, the compiler will infer automatically the type from the context when possible.
 
 - The variable declared here are immutable by default. To be able to modify such a variable we need to do :
 ```
 let mut a: i32 = 2;
 ```
-- Variable  
 
+- Note also that variables in Rust are handled by a mecanism of borrowing to allow the freeing of the memory. See [this](https://doc.rust-lang.org/rust-by-example/scope/move.html).
 
 ## Function declaration
 
@@ -91,6 +93,8 @@ for x in a.inter() {}
 
 ## Class
 
+I group in this section JS classes, with Solidity Contracts and Rust structs are all the structures are used with the same objective : having in the same place related properties and behaviour.
+
 | Javascript  |  Typescript |  Solidity | Rust  |
 |---|---|---|---|
-|  class MyClass {} |   |  contract MyClass {} |   |
+|  class Point {} |   |  contract Point {} |   |
